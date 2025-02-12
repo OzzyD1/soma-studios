@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+#logo {
+    padding-top: 2em;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+#services {
+    padding-top: 4em;
+    margin: 0;
+}
