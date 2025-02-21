@@ -1,10 +1,39 @@
 body {
     background-color: rgb(20, 20, 20);
     color: white;
+    overflow-x: hidden;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: brightness(0.4);
+}
+
+.hero-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #logo {
     padding-top: 2em;
+    max-width: 300px;
 }
 
 p {
@@ -14,4 +43,41 @@ p {
 #services {
     padding-top: 4em;
     margin: 0;
+}
+
+.section {
+    padding: 6em 0;
+    position: relative;
+}
+
+.section-dark {
+    background-color: rgb(15, 15, 15);
+}
+
+.portfolio-item {
+    margin: 1em 0;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.02);
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+footer {
+    padding: 2em 0;
+    background: rgb(10, 10, 10);
 }
