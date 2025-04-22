@@ -142,16 +142,16 @@ footer {
     font-family: inherit;
 }
 
-.social-link:hover {
+social-link:hover {
     transform: scale(1.1);
     text-decoration: none;
 }
 
-.social-link:hover i.fa-instagram {
+social-link:hover i.fa-instagram {
     color: #e1306c;
 }
 
-.social-link:hover i.fa-tiktok {
+social-link:hover i.fa-tiktok {
     color: #00f2ea;
 }
 
@@ -164,4 +164,58 @@ footer {
     justify-content: center;
     gap: 2em;
     margin-top: 2em;
+}
+
+.bio-section {
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+}
+
+.bio-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.8em;
+    line-height: 1.6;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-section {
+    background-color: rgb(15, 15, 15);
+    padding: 8em 0;
+}
+
+.bold-text {
+    font-size: 3em !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 2em !important;
+    color: white !important;
+}
+
+.testimonial-card .description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 1.5em;
+    color: white !important;
+}
+
+.testimonial-card .testimonial-author p {
+    font-size: 1.1em;
+    margin: 0;
+    font-weight: bold;
+    color: white !important;
+}
+
+.testimonial-card .testimonial-author span {
+    font-size: 0.9em;
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.9) !important;
 }
